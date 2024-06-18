@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white p-6 rounded-md shadow-md">
+        <form action="" id="quiz-form">
+            <label for="level" class="block mt-4 text-sm font-medium text-gray-700">
+                <span class="font-bold">Select level</span>
+                <select id="level" class="block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <option disabled selected>Select level</option>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                    
+                </select>
+            </label>
+
+            <label for="category" class="block mt-4 text-sm font-medium text-gray-700">
+                <span class="font-bold">Select Catogory</span>
+                <select id="level" class="block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <option disabled selected>Select category</option>
+                    <option>Sports</option>
+                    <option>Science</option>
+                    <option>General knowledge</option>
+                    
+                </select>
+            </label>
+
+            <div id="questions-container">
+                <div class="questions">
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        <span class="font-bold">Write Question</span>
+                        <textarea class="question block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="4" placeholder="Write Question..."></textarea>
+                    </label>
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        Option-1
+                        <input type="text" class="option1 block w-full h-[2rem] mt-1 border border-gray-300 rounded-md shadow-sm">
+                    </label>
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        Option-2
+                        <input type="text" class="option2 block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm">
+                    </label>
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        Option-3
+                        <input type="text" class="option3 block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm">
+                    </label>
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        Option-4
+                        <input type="text" class="option4 block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm">
+                    </label>
+                    <label class="block mt-4 text-sm font-medium text-gray-700">
+                        Answer
+                        <input type="text" class="answer block w-full mt-1 h-[2rem] border border-gray-300 rounded-md shadow-sm">
+                    </label>
+                </div>
+            </div>
+            <button type="button" id="add-question-btn" class="mt-4 border border-blue-600 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Add Question</button>
+            <button type="button" id="save-btn" class="mt-4 border border-blue-600 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Save Questions</button>
+        </form>
+    </div>
+</body>
+</html>
