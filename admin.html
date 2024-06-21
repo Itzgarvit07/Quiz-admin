@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="flex items-center justify-center min-h-screen">
+<body>
+    <div class="border-2 border-slate-200 rounded w-[15rem] p-2 m-5">
+        <h2 class="font-medium" >User Name: <span id="loggedUserName" class="font-light"></span></h2>
+        <p class="font-medium">User Email: <span id="loggedUserEmail" class="font-light"></span></p>
+        <button id="logout" class="bg-blue-500 text-white px-4 py-[4px] mt-3 rounded-md">Logout</button>
+      </div>
+      <div class="flex items-center justify-center min-h-screen">
     <div class="max-w-md w-full bg-white p-6 rounded-md shadow-md">
         <form action="" id="quiz-form">
             <label for="level" class="block mt-4 text-sm font-medium text-gray-700">
@@ -64,5 +70,7 @@
             <button type="button" id="save-btn" class="mt-4 border border-blue-600 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Save Questions</button>
         </form>
     </div>
+</div>
 </body>
 </html>
+<script src="./admin.js" type="module" defer></script>

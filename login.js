@@ -25,6 +25,7 @@ btn.addEventListener("click",function(event){
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     const user = userCredential.user;
+    localStorage.setItem("loggedInUserId",user.uid)
     alert('logging account...')
     window.location.href = "admin.html"
     // ...
